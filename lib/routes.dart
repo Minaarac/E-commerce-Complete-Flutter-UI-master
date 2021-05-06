@@ -1,14 +1,20 @@
+//import 'dart:js';
+
 import 'package:flutter/widgets.dart';
 import 'package:shop_app/screens/cart/cart_screen.dart';
 import 'package:shop_app/screens/complete_profile/complete_profile_screen.dart';
 import 'package:shop_app/screens/details/details_screen.dart';
+import 'package:shop_app/screens/feedback/feedback_screen.dart';
+import 'package:shop_app/screens/filterscreen/filter_screen.dart';
 import 'package:shop_app/screens/forgot_password/forgot_password_screen.dart';
 import 'package:shop_app/screens/home/home_screen.dart';
+import 'package:shop_app/screens/kisiselbilgiler/kisiselbilgiler_screen.dart';
 import 'package:shop_app/screens/login_success/login_success_screen.dart';
 import 'package:shop_app/screens/otp/otp_screen.dart';
 import 'package:shop_app/screens/profile/profile_screen.dart';
 import 'package:shop_app/screens/sign_in/sign_in_screen.dart';
 import 'package:shop_app/screens/splash/splash_screen.dart';
+import 'package:shop_app/screens/hesabim/hesabim_screen.dart';
 
 import 'screens/sign_up/sign_up_screen.dart';
 
@@ -26,4 +32,8 @@ final Map<String, WidgetBuilder> routes = {
   DetailsScreen.routeName: (context) => DetailsScreen(),
   CartScreen.routeName: (context) => CartScreen(),
   ProfileScreen.routeName: (context) => ProfileScreen(),
+  HesabimScreen.routeName: (context) => HesabimScreen(),
+  KisiselBilgilerScreen.routeName: (context) => KisiselBilgilerScreen(),
+  FeedbackScreen.routeName: (context) => FeedbackScreen(),
+  FiltersScreen.routeName: (context) => FiltersScreen(),
 };

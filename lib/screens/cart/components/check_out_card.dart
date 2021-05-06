@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:shop_app/components/default_button.dart';
+import 'package:shop_app/screens/filterscreen/filter_screen.dart';
 
 import '../../../constants.dart';
 import '../../../size_config.dart';
@@ -76,7 +77,8 @@ class CheckoutCard extends StatelessWidget {
                   width: getProportionateScreenWidth(190),
                   child: DefaultButton(
                     text: "Filtrele",
-                    press: () {},
+                    press: () =>
+                        Navigator.pushNamed(context, FiltersScreen.routeName),
                   ),
                 ),
               ],

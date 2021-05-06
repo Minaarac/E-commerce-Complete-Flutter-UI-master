@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:shop_app/screens/hesabim/hesabim_screen.dart';
+//import 'package:shop_app/screens/home/home_screen.dart';
+import 'package:shop_app/screens/kisiselbilgiler/kisiselbilgiler_screen.dart';
+import 'package:shop_app/screens/splash/splash_screen.dart';
 
 import 'profile_menu.dart';
 import 'profile_pic.dart';
@@ -15,12 +19,13 @@ class Body extends StatelessWidget {
           ProfileMenu(
             text: "Hesabım",
             icon: "assets/icons/User Icon.svg",
-            press: () => {},
+            press: () => Navigator.pushNamed(context, HesabimScreen.routeName),
           ),
           ProfileMenu(
             text: "Kişisel Bilgilerim",
             icon: "assets/icons/Question mark.svg",
-            press: () {},
+            press: () =>
+                Navigator.pushNamed(context, KisiselBilgilerScreen.routeName),
           ),
           ProfileMenu(
             text: "Bildirimler",
@@ -35,7 +40,7 @@ class Body extends StatelessWidget {
           ProfileMenu(
             text: "Çıkış Yap",
             icon: "assets/icons/Log out.svg",
-            press: () {},
+            press: () => Navigator.pushNamed(context, SplashScreen.routeName),
           ),
         ],
       ),
